@@ -60,10 +60,10 @@
   var textred = document.getElementById('textred');
 
   submit.addEventListener('click', function (e) {
-
+    e.preventDefault();
 
     if (email.value == "") {
-    e.preventDefault();
+
       email.classList.add('red');
       textred.style.display = "block";
     }     
